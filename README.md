@@ -3,7 +3,6 @@
 A full-stack AI application that parses study materials (PDFs), generates structured Multiple Choice Questions (MCQs) using the **Mistral-7B** Large Language Model, and evaluates user performance in real-time.
 
 
-
 ---
 
 ## 🚀 Features
@@ -13,6 +12,12 @@ A full-stack AI application that parses study materials (PDFs), generates struct
 * **Interactive UI:** Built with **Streamlit**, featuring a form-based quiz interface and scoring metrics.
 * **Cloud-to-Local Tunneling:** Uses **Ngrok** to bridge a local frontend with high-performance cloud inference (Kaggle).
 
+---
+## References and Sources : 
+* **Youtube :** https://www.youtube.com/watch?v=eovBbABk3hw&t=2s
+* **Source :** https://github.com/mistralai/mistral-inference
+* **Model Source :** https://huggingface.co/filipealmeida/Mistral-7B-Instruct-v0.1-sharded/tree/main
+* **Base Paper :** https://arxiv.org/abs/2310.06825
 ---
 
 ## 🏗️ Architecture
@@ -28,6 +33,15 @@ The project follows a distributed architecture to handle the compute-heavy requi
 * **Response Reliability:** Implemented Regex-based JSON extraction to handle LLM conversational filler.
 * **UX Stability:** Utilized Streamlit `st.form` and `st.session_state` to prevent UI flickering during interaction.
 
+---
+
+## 🔮 Future Roadmap & Enhancements
+
+### 1. Advanced RAG Implementation
+Currently, the system uses basic text chunking. I plan to implement **Retrieval-Augmented Generation (RAG)** using a Vector Database (like **FAISS** or **ChromaDB**) to intelligently query the most relevant context from 100+ page documents rather than just the first few pages.
+
+### 3. AI-Powered Explanations
+Instead of a simple Correct/Incorrect result, integrate a "Tutor Mode" where the LLM provides a detailed step-by-step reasoning for each answer based on the source text, helping students learn from their mistakes.
 ---
 
 ## 🛠️ Tech Stack
@@ -76,3 +90,5 @@ The project follows a distributed architecture to handle the compute-heavy requi
 4.  Click **"Submit Final Answers"** to see your score and the correct answers.
 
 ---
+## 👨‍💻 Author
+**Somanath** *Bachelor of Engineering - BLDEA College of Engineering and Technology*
