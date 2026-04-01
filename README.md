@@ -2,7 +2,7 @@
 
 A full-stack AI application that parses study materials (PDFs), generates structured Multiple Choice Questions (MCQs) using the **Mistral-7B** Large Language Model, and evaluates user performance in real-time.
 
-
+## Demo Video : https://drive.google.com/file/d/1DrkaQHv-48GZC0fOumbtoph8ui1uN4Q0/view?usp=sharing
 ---
 
 ## 🚀 Features
